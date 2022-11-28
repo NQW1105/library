@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NQW Library</title>
+    <link rel=stylesheet href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>NQW Library</h1>
+        <div>
+            <button>Log In</button>
+            <button>Sign Up</button>
+        </div>
+    </div>
+    <form action="example.com/" method="post">
+        <div>
+            <p>+ ADD BOOK</p>
+            <button id="close-form">X</button>
+        </div>
+        <label for="book-title">Book Title     : </label>
+        <input type="text" id="book-title" autofocus required>        
+        <label for="book-author">Author     : </label>
+        <input type="text" id="book-author">
+        <label for="book-pages">No. of Pages : </label>
+        <input type="number" id="book-pages" min="1">        
+        <div>
+            <label for="readStatus">Completed?</label>
+            <input type="checkbox" id="readStatus">
+        </div>    
+        <button type="submit">Submit</button>
+    </form>
+    <div id="content">
+        <div id="title">
+            <h3>Current Reading List</h3>
+            <button>+ ADD BOOK</button>
+        </div>
+
+        <table id="book-contents">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </div>
+    <div id="footer">
+        <p>Copyright © 2022, Credits to NQW</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
